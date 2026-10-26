@@ -110,8 +110,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/init/init.vendor.wlan.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.wlan.rc \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/init/init_thermal-engine-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine-v2.rc \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
-    vendor/motorola/sm6435-common/proprietary/vendor/etc/init/motorola.hardware.health.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.health.service.rc \
-    vendor/motorola/sm6435-common/proprietary/vendor/etc/init/motorola.hardware.health.storage.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.health.storage.service.rc \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/init/nicmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nicmd.rc \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
@@ -151,7 +149,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/init/vendor.tsa.hdcp-IHDCPInterface.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.tsa.hdcp-IHDCPInterface.rc \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
-    vendor/motorola/sm6435-common/proprietary/vendor/etc/libse-gto-hal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libse-gto-hal.conf \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -193,7 +190,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/models/acd/speech_nonenpu.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech_nonenpu.eai \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.km300.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.km300.xml \
-    vendor/motorola/sm6435-common/proprietary/vendor/etc/permissions/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/noRil/apq_excluded_telephony_features.xml \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/motorola/sm6435-common/proprietary/vendor/etc/qcom_widevine_licenses.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/qcom_widevine_licenses.pfm \
@@ -309,7 +305,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     aidl_hdcp_interface-V1-ndk \
     android.hardware.bluetooth.audio-impl_prebuilt \
-    android.hardware.secure_element.thales.libse \
     btaudio_offload_if \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     deviceInfoServiceModuleNr \
@@ -449,7 +444,6 @@ PRODUCT_PACKAGES += \
     libeai_float \
     libengineplugin \
     libext_tflite_c \
-    libextra-thales \
     libfastcvdsp_stub \
     libfastcvopt \
     libgdtap \
@@ -506,9 +500,6 @@ PRODUCT_PACKAGES += \
     libmmrtpdecoder_vendor \
     libmmrtpencoder_vendor \
     libmotext_inf \
-    libmotohid \
-    libnativecospatchkernel-thales \
-    libnativecosupdateapi-thales \
     libnicm \
     libnicm_dsi \
     libnicm_interface \
@@ -641,8 +632,6 @@ PRODUCT_PACKAGES += \
     libsotertool \
     libspcom \
     libspl \
-    libspukeymintdeviceutils \
-    libspukeymintutils \
     libssc \
     libssc_default_listener \
     libssd \
@@ -693,9 +682,6 @@ PRODUCT_PACKAGES += \
     libwqe \
     libxml \
     libxtadapter \
-    motorola.hardware.health.aidl-V1-ndk \
-    motorola.hardware.health.storage.aidl-V1-ndk \
-    motorola.hardware.health.storage@1.0 \
     motorola.hardware.sensors-V1-ndk \
     qcrilInterfaces \
     qcrilIntermodulemsgs \
@@ -772,7 +758,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.fm-V1-ndk \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
-    vendor.qti.hardware.qdutils_disp@1.0 \
     vendor.qti.hardware.qseecom-V1-ndk \
     vendor.qti.hardware.qteeconnector-V1-ndk \
     vendor.qti.hardware.qteeconnector@1.0 \
@@ -950,8 +935,6 @@ PRODUCT_PACKAGES += \
     imsdcservice-saidl.xml \
     manifest_btaudiocoreservices_qti.xml \
     manifest_identity_credential.xml \
-    motorola.hardware.health.service.xml \
-    motorola.hardware.health.storage.service.xml \
     mwqem-saidl.xml \
     qcrilhook-saidl.xml \
     qesdk-manager.xml \
@@ -997,11 +980,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper-service-qti \
     android.hardware.identity-service-qti \
     android.hardware.keymaster@4.0-service-qti \
-    android.hardware.secure_element-service.thales \
     android.hardware.security.keymint-service-qti \
-    android.hardware.weaver-service-spu-qti \
-    motorola.hardware.health-service \
-    motorola.hardware.health.storage-service \
     qcrilNrd \
     vendor.qti.hardware.alarm-service \
     vendor.qti.hardware.capabilityconfigstore-service \
